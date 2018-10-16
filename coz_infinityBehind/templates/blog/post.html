@@ -2,10 +2,11 @@
     {% block body_block %}
 
         <!-- Main Content -->
-	<div class='container blog'>
-		<div class="row">
-			<div class="col col-sm-4 col-md-2">
-				<div class="container">
+	<div class="container">
+   <div class='jumbotron blog'>
+    <div class="row">
+      <div class="col col-sm-4 col-md-2">
+        <div class="container">
                     <center> {% if post.post_tag == "django" %}
                                    <img class= "img-rounded-float-right" src="{{DJANGO}}" alt="avatar" width="150" height="150">
                                    {% elif post.post_tag == "java" %}
@@ -33,21 +34,24 @@
                                    {% endif %}
                     </center>
                 </div>
-			</div>
+                 <div class="container-fluid"><p class="date">{{ post.date}}</p></div>
+      </div>
 
-			<div class="col col-sm-8 col-md-9 container-fluid verticle-hr">
-				<div class="row-2">
-					<center><strong><h1>{{post.title}}</h1></strong></center>
-				</div>
-				<div class="row-1">
-					<hr>
-				</div>
-				<div class="row-9">
-					{{post.body|linebreaks}}
-				</div>
-			</div>
-		</div>
-	</div>
+
+      <div class="col col-sm-8 col-md-9 container-fluid verticle-hr">
+        <div class="row-2">
+          <center><strong><h1>{{post.title}}</h1></strong></center>
+        </div>
+        <div class="row-1">
+          <hr>
+        </div>
+        <div class="row-9">
+          {{post.body|linebreaks}}
+        </div>
+      </div>
+    </div>
+  </div> 
+  </div>
 	<div class="container" id="back">
 		<a class="btn btn-primary back-btn" role="button" href="{% url 'blog:blogpage' %}"><< BACK</a>
 	</div>

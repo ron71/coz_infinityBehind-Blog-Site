@@ -238,6 +238,14 @@ body, html {
     margin-top: 100px;
 }
 
+.date{
+  font-size: 15px;
+  color: rgba(0,0,255,0.5);
+  font-style: italic;
+  /*padding-left: 10px;*/
+}
+
+
 @media (max-width:767px){
     .navbar-header h3 a{
         color:#fff;
@@ -257,8 +265,9 @@ body, html {
 
     .hero-image img{
     margin-top: 3%;
-    width: 120%;
-    height: 60%;
+    width: 80%;
+    height: 40%;
+    
     }
 
 
@@ -320,5 +329,25 @@ body, html {
 
     .footer-contacts{
         font-size: 15px;
+    }
+}
+
+@media (max-width:407px){
+  .blog{
+    margin-left: 2%;
+  }
+}
+
+@media (max-width:500px){
+  .hero-image img{
+    margin-top: 3%;
+    width: 110%;
+    height: 50%;
+    
+    }
+
+    .date{
+      padding-left: 18%
+      font-style:italic;
     }
 }
