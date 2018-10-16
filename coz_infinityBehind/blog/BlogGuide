@@ -1,0 +1,91 @@
+1. Creating Blog Model
+
+
+from django.db import models
+
+# Create your models here.
+
+
+class Post(models.Model):
+	title = models.CharField(max_length=140)
+	body = models.TextField()
+	date = models.DateTimeField()
+
+	def __str__(self):
+		return self.title
+
+
+2. Register model in admin.py
+
+
+from django.contrib import admin
+from blog.models import Post
+
+# Register your models here.
+
+admin.site.register(Post)
+
+
+3. run -> python manage.py makemigrations
+
+4. run -> python manage.py migrate
+
+5. run server , we observed that admin does not have any user
+	
+	so now we can add a user to the admin
+
+	python manage.py createsuperuser
+
+	user : captain
+	pass: capt1997
+
+
+6. Now in app level add a file named urls.py
+
+7. In urls.py : 
+
+	from django.conf.urls import url, include
+    from django.views.generic import ListView, DetailView
+    from blog.models import Post
+
+    urlpatterns = [
+	# path("", ListView.as_view(queryset=post.objects.all().order_by("date")[:25], template_name="blog/blog.html")
+	# path("/admin")
+	url(r'^$', ListView.as_view(queryser=Post.objects.all().order_by("date")[:25], template_name="blog/blog.html"))
+	url(r'(?P<pk>\d+)$', DetailView.as_view(model=Post, template_name="blog/post.html"))
+	]
+
+	in project level url.py 
+
+	add -> from django.urls import path, include
+
+	add in url list-> path('blog/', include('blog.urls'))
+
+
+
+8. Now create 1 folder blog in app level folder
+9. Add two html files blog.html, post.html
+
+10. In blog.html
+
+{% block Contents %}
+{% for post in object_list %}
+
+<h5>{{Post.date|date:"Y-m-d"}}<a href="{{Post.id}}"></a>{{Post.title}}</h5>
+
+{% endfor %}
+
+{% endblock %}
+
+
+10. create a folder templates and keep the blog folder in it
+
+11. In settings.py 
+	
+	add following....
+
+	TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
+
+	In  Templates list uder DIRS add TEMPLATES_DIR
+
+12. now you can run the server.

@@ -1,0 +1,73 @@
+{% extends 'blog/base.html' %}
+    {% block body_block %}
+<!-- hero-image -->
+          <div class="hero-image">
+              <div class="hero-text">
+                <div class="logo-image">
+                    <img src="{{LOGO}}">
+                </div>
+                <h1>coz_infinityBehind</h1>        
+                
+              </div>
+        </div> 
+
+<!-- main-content -->
+        <center><h1 style="color: #4FCA50;"><strong>Blogs...</strong></h1></center>
+        <div class="container-fluid">
+            {% if blog_records %}
+                {% for post in blog_records %}
+                    <div class="jumbotron post">
+                        <div class="row">
+                            <div class="col col-sm-7 col-lg-9  col-md-8" id="post-title">
+                                <div class="container">
+                                        <a href="{{post.id}}"><h1><b>{{post.title}}</b></h1></a>
+                                    <br>
+                                    <h5><i>{{post.date}}</i></h5>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col col-lg-2 col-sm-3 col-md-3">
+                                <div class="container">
+                                   <center> {% if post.post_tag == "django" %}
+                                   <img class= "img-rounded-float-right" src="{{DJANGO}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "java" %}
+                                   <img class= "img-rounded-float-right" src="{{JAVA}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "python" %}
+                                   <img class= "img-rounded-float-right" src="{{PYTHON}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "c" %}
+                                   <img class= "img-rounded-float-right" src="{{C}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "linux" %}
+                                   <img class= "img-rounded-float-right" src="{{LINUX}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "android" %}
+                                   <img class= "img-rounded-float-right" src="{{ANDROID}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "flutter" %}
+                                   <img class= "img-rounded-float-right" src="{{FLUTTER}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "html" %}
+                                   <img class= "img-rounded-float-right" src="{{HTML}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "css" %}
+                                   <img class= "img-rounded-float-right" src="{{CSS}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "bootstrap" %}
+                                   <img class= "img-rounded-float-right" src="{{BOOTSTRAP}}" alt="avatar" width="150" height="150">
+                                   {% elif post.post_tag == "story" %}
+                                   <img class= "img-rounded-float-right" src="{{STORY}}" alt="avatar" width="150" height="150">
+                                   {% else %}
+                                   <img class= "img-rounded-float-right" src="{{IDEA}}" alt="avatar" width="150" height="150">
+                                   {% endif %}
+                               </center>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            
+            {% else %}
+                <div class="jumbotron post">
+                    <h1><strong>OOPS no posts yet!</strong></h1>
+                </div>
+            {% endif %}
+
+        </div>
+
+    {% endblock %}
+    

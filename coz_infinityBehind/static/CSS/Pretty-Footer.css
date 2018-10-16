@@ -1,0 +1,121 @@
+footer{
+  /*background-color:#292c2f;*/
+  background-color: #4FCA50;
+  box-shadow: 5px -10px 15px 5px #BDBDBD;
+  box-sizing:border-box;
+  width:100%;
+  text-align:left;
+  font:bold 16px sans-serif;
+  padding:55px 50px;
+  margin-top:80px;
+  bottom:0;
+  color:#fff;
+}
+
+.footer-navigation h3{
+  margin:0;
+  font:normal 36px Cookie, cursive;
+  margin-bottom:20px;
+  color:#fff;
+}
+
+.footer-navigation h3 a{
+  text-decoration:none;
+  color:#fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.footer-navigation h3 span{
+  color:#000099;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.footer-navigation p.links a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-navigation p.company-name{
+  color:#fcfcfc;
+  font-size:14px;
+  font-weight:normal;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top:20px;
+}
+
+@media (max-width:767px) {
+  .footer-contacts{
+    margin:30px 0;
+  }
+}
+
+.footer-contacts p{
+  display:inline-block;
+  color:white;
+  vertical-align:middle;
+}
+
+.footer-contacts p a{
+  color:#000099;
+  text-decoration:none;
+}
+
+.fa.footer-contacts-icon{
+  background-color:white;
+  color:#4FCA50;
+  font-size:22px;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  text-align:center;
+  line-height:38px;
+  margin:10px 15px 10px 0;
+}
+
+span.new-line-span{
+  display:block;
+  font-weight:normal;
+  display:block;
+  font-weight:normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-about h4{
+  display:block;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.footer-about p{
+  line-height:20px;
+  color:#fff;
+  font-size:13px;
+  font-weight:normal;
+  margin:0;
+}
+
+div.social-links{
+  margin-top:20px;
+  color:white;
+}
+
+.social-links a{
+  display:inline-block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  background-color:#4FCA50;
+  border-radius:2px;
+  font-size:35px;
+  color:#ffffff;
+  text-align:center;
+  line-height:40px;
+  margin-right:20px;
+  margin-bottom:5px;
+}
+

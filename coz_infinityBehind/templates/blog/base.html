@@ -1,0 +1,137 @@
+<!doctype html>
+
+{% load staticfiles %}
+{% load staticfiles %}
+{% static 'images/django_logo.png' as DJANGO %}
+{% static 'images/logo.png' as LOGO %}
+{% static 'images/logocrop.png' as LOGO_CROP %}
+{% static 'images/story_logo.png' as STORY %}
+{% static 'images/java_logo.png' as JAVA %}
+{% static 'images/linux_logo.png' as LINUX %}
+{% static 'images/html_logo.png' as HTML %}
+{% static 'images/css_logo.png' as CSS %}
+{% static 'images/android_logo.png' as ANDROID %}
+{% static 'images/flutter_logo.png' as FLUTTER %}
+{% static 'images/python_logo.png' as PYHTON %}
+{% static 'images/c_logo.png' as C %}
+{% static 'images/idea_logo.png' as IDEA %}
+{% static 'images/bootstrap_logo.png' as BOOTSTRAP %}
+{% static 'images/comingsoon.png' as COMING_SOON %}
+
+<html lang="en">
+
+<!-- head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>coz_infinityBehind - My Blogs</title>
+        <link rel="shortcut icon" href="{{LOGO_CROP}}" />
+        <!--For footer-->
+        <link rel="stylesheet" href="{% static 'bootstrap-4.0.0/css/bootstrap.min.css' %}"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:600" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS/Pretty-Footer.css' %}">
+        <link rel="stylesheet" href="{% static 'CSS/main.css' %}"/>
+    </head>
+
+<!-- body -->
+    <body>
+
+<!-- navbar -->
+        <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top custom-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h3><a href="{% url 'blog:blogpage' %}">coz_infinity<span>Behind</span></a></h3>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link social" href="{% url 'blog:portfolio' %}">Portfolio <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+{% block body_block %}
+
+<!-- Body will be here -->
+{% endblock %}
+
+
+<!-- footer -->
+
+    <br><br>
+    <footer>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="#">coz_infinity<span>Behind</span></a></h3>
+                    <p class="links">
+                        <a href="{% url 'blog:blogpage' %}">
+                            Home
+                        </a>
+                        <strong> &nbsp;·&nbsp; </strong>
+                        <a href="{% url 'blog:blogpage' %}">
+                            Blog
+                        </a>
+                        <strong> &nbsp;·&nbsp; </strong>
+                        <a href="{% url 'blog:portfolio' %}">
+                            Portfolio
+                        </a>
+                        <strong>  </strong><a href="#"></a><strong></strong><a href="#"></a><strong> </strong><a href="#"></a>
+                    </p>
+
+                    <p class="company-name">coz_infinityBehind © 2018 </p>
+                </div>
+                <div class="col-md-4 col-sm-6 footer-contacts">
+                    <div>
+                        <p class="footer-center-info email text-left"> Feedback</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> 
+                            <a href="mailto:cozinfinitybehind@gmail.com" target="_blank">cozinfinitybehind@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-md-4 footer-about">
+                    <h4>About the site</h4>
+                    <p> This site is a personal blog site designed for various geek stuffs.</p>
+                    <div class="social-links social-icons">
+                        <a href="https://www.facebook.com/rohan.kumar.5891004" target="_blank">
+                            <i class="fa fa-facebook social" id="social-fb"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maxmillion_71/" target="_blank">
+                            <i class="fa fa-instagram social" id="social-insta"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rohan-kumar-237579134" target="_blank">
+                            <i class="fa fa-linkedin social" id="social-tw"></i></a><a href="https://github.com/ron71"><i class="fa fa-github social" id="social-git"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center center-block">
+                <p class="company-name">&copy All right reserved.</p>
+        </footer>
+
+<!-- js/jquery dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+
+    </body>
+
+</html>
+
