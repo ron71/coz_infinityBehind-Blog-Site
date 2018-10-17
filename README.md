@@ -38,8 +38,7 @@
     </ol>
   </li>
 </ul>
-
-<br><br>
+<br>
 <p><b>Security key is kept hidden.</b> After cloning you must create your own <em>local_settings.py</em> file and add:
   <br>SECRET='....# your own securitykey....'<br>
  </p>
