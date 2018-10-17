@@ -3,37 +3,37 @@ html{
     min-height: 100%;
 }
 .navbar{
-	background-color: #4FCA50  ! important; 
-	/*box-shadow: 5px 10px 15px 5px #BDBDBD;*/
-	padding-bottom: 10px;
-	padding-top: 20px;
+  background-color: #4FCA50  ! important;
+  /*box-shadow: 5px 10px 15px 5px #BDBDBD;*/
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 .nav-item{
 
-	padding-left: 60px;
+  padding-left: 60px;
 
 }
 
 .nav-link{
-	font-size: 20px;
-	font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 .nav-link:hover{
-	color: #FFF !important;
+  color: #FFF !important;
 }
 
 .navbar-brand{
-	font-size:xx-large !important;
-	font-family: 'Ubuntu', sans-serif;
-	font-size-adjust: inherit !important;
-	font-style: inherit !important;
-	font-weight: bolder;
-	padding-bottom: 20px;
-	padding-top: 20px;
+  font-size:xx-large !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-size-adjust: inherit !important;
+  font-style: inherit !important;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .navbar-header h3 a{
-	color:#fff;
+  color:#fff;
   font-family: 'Ubuntu', sans-serif;
   text-decoration:none;
   font-size: 32px;
@@ -41,7 +41,7 @@ html{
   padding-left: 10%;
 }
 .navbar-header h3 span{
-	color:#000099;
+  color:#000099;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
 }
@@ -49,7 +49,7 @@ html{
 
 body, html {
     height: 100%;
-    
+
 }
 
 /* The hero image */
@@ -69,9 +69,9 @@ body, html {
     margin-bottom: 40px;
 }
 .hero-image img{
-	margin-top: 3%;
-	width: 60%;
-	height: 30%;
+  margin-top: 3%;
+  width: 60%;
+  height: 30%;
 }
 
 /* Place text in the middle of the image */
@@ -87,16 +87,16 @@ body, html {
 }
 
 .post{
-	color: #4FCA50;
-	box-sizing: content-box;
-	border: 1px solid ;
-	border-radius: 20px;
-	background-color: #FFFFFF;
-	/*box-shadow: 5px 10px 15px #6c766b;*/
-	box-shadow: 5px 10px 15px #BDBDBD;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-bottom: 3%;
+  color: #4FCA50;
+  box-sizing: content-box;
+  border: 1px solid ;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  /*box-shadow: 5px 10px 15px #6c766b;*/
+  box-shadow: 5px 10px 15px #BDBDBD;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
 }
 
 .post h1{
@@ -130,7 +130,7 @@ body, html {
  .social {
      -webkit-transform: scale(0.8);
      /* Browser Variations: */
-     
+
      -moz-transform: scale(0.8);
      -o-transform: scale(0.8);
      -webkit-transition-duration: 0.5s;
@@ -142,7 +142,7 @@ body, html {
 /*
     Multicoloured Hover Variations
 */
- 
+
  #social-fb:hover {
      color: #3B5998;
      /*margin-top: 10px;*/
@@ -165,13 +165,13 @@ body, html {
  }
 
  #social-git:hover {
- 	/*margin-top: 10px;*/
+  /*margin-top: 10px;*/
      color: #006666;
      /*font-size: 50px;*/
  }
 
  #social-insta:hover {
- 	/*margin-top: 10px;*/
+  /*margin-top: 10px;*/
      color: #ff6666;
      /*font-size: 50px;*/
  }
@@ -206,10 +206,10 @@ body, html {
     font-family: 'Kanit', sans-serif;
  }
 
- .verticle-hr { 
-  
+ .verticle-hr {
+
     border:         none;
-    border-left:    1px solid hsla(200, 10%, 50%,100);       
+    border-left:    1px solid hsla(200, 10%, 50%,100);
 }
 
 #back{
@@ -218,7 +218,7 @@ body, html {
 }
 
 .back-btn{
-    background-color: #4FCA50  ! important; 
+    background-color: #4FCA50  ! important;
     border-color: #4FCA50  ! important;
     border-radius: 20px;
     box-shadow: 5px 10px 15px #BDBDBD;
@@ -227,7 +227,7 @@ body, html {
 
 #back a{
     color: white;
-    font-family: 
+    font-family:
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }
@@ -244,7 +244,6 @@ body, html {
   font-style: italic;
   /*padding-left: 10px;*/
 }
-
 
 @media (max-width:767px){
     .navbar-header h3 a{
@@ -267,7 +266,6 @@ body, html {
     margin-top: 3%;
     width: 80%;
     height: 40%;
-    
     }
 
 
@@ -308,7 +306,7 @@ body, html {
     }
 
     .back-btn{
-    background-color: #4FCA50  ! important; 
+    background-color: #4FCA50  ! important;
     border-color: #4FCA50  ! important;
     border-radius: 20px;
     box-shadow: 5px 10px 15px #BDBDBD;
@@ -332,22 +330,22 @@ body, html {
     }
 }
 
-@media (max-width:407px){
-  .blog{
-    margin-left: 2%;
-  }
-}
 
 @media (max-width:500px){
   .hero-image img{
     margin-top: 3%;
-    width: 110%;
+    width: 100%;
     height: 50%;
-    
+
+    }
+
+
+    .post{
+        margin-bottom:45px;
     }
 
     .date{
       padding-left: 18%
-      font-style:italic;
     }
+
 }

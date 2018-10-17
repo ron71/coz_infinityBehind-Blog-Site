@@ -1,9 +1,8 @@
 {% extends 'blog/base.html' %}
     {% block body_block %}
-
+<div class="container">
         <!-- Main Content -->
-	<div class="container">
-   <div class='jumbotron blog'>
+  <div class='jumbotron blog'>
     <div class="row">
       <div class="col col-sm-4 col-md-2">
         <div class="container">
@@ -34,9 +33,8 @@
                                    {% endif %}
                     </center>
                 </div>
-                 <div class="container-fluid"><p class="date">{{ post.date}}</p></div>
+                <div class="container-fluid"><p class="date">{{ post.date}}</p></div>
       </div>
-
 
       <div class="col col-sm-8 col-md-9 container-fluid verticle-hr">
         <div class="row-2">
@@ -46,13 +44,15 @@
           <hr>
         </div>
         <div class="row-9">
-          {{post.body|linebreaks}}
+          <div class="container">
+              {{post.body|linebreaks}}
+          </div>
         </div>
       </div>
     </div>
-  </div> 
   </div>
-	<div class="container" id="back">
-		<a class="btn btn-primary back-btn" role="button" href="{% url 'blog:blogpage' %}"><< BACK</a>
-	</div>
+  </div>
+  <div class="container" id="back">
+    <a class="btn btn-primary back-btn" role="button" href="{% url 'blog:blogpage' %}"><< BACK</a>
+  </div>
  {% endblock %}
