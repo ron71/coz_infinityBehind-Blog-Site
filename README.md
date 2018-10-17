@@ -43,7 +43,7 @@
   <br>SECRET='....# your own securitykey....'<br>
   After adding above file, in the <em>settings.py</em> file edit:<br>
 </p>
-```python
+```
   from projectpackagename import local_settings.py
   #
   #
