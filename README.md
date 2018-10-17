@@ -1,2 +1,1 @@
-# coz_infinityBehind-Blog-Site
-A personal blogging site developed with scratch.
+<center><h1>coz_inifinityBehind</h1></center>
