@@ -38,3 +38,16 @@
     </ol>
   </li>
 </ul>
+
+<br><br>
+<p><b>Security key is kept hidden.</b> After cloning you must create your own <em>local_settings.py</em> file and add:
+  <br>SECRET='....# your own securitykey....'<br>
+ </p>
+ <p>The site is only functional when all the configrations as described above is set in the virtual environment.</p>
+ 
+ <h4>Here's Link to the site</h4><br>
+ http://cozinfinitybehind.pythonanywhere.com/
+ 
+ <p>Here is the screen shots of the site :<p><br>
+  
+  <img src="/ScreentShots/"
