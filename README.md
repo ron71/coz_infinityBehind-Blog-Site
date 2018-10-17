@@ -39,7 +39,7 @@
   </li>
 </ul>
 <br>
-<p><b>Security key is kept hidden.</b> After cloning you must create your own <em>local_settings.py</em> file and add:
+<p><b>Security key is kept hidden.</b> After cloning you must create your own <em>local_settings.py</em> file in project level folder and add:
   <br>SECRET='....# your own securitykey....'<br>
  </p>
  <p>The site is only functional when all the configrations as described above is set in the virtual environment.</p>
