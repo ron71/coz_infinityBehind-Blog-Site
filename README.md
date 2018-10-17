@@ -51,6 +51,14 @@
  
  <p>Here is the screen shots of the site :<p><br>
   
+  <table>
+  <tr><td><img src="https://github.com/ron71/coz_infinityBehind-Blog-Site/blob/master/ScreenShots/Screen%20Shot%202018-10-17%20at%2007.38.33-fullpage.png"></td>
+  <td>
+    <img src="/ScreenShots/Screen%20Shot%202018-10-17%20at%2008.46.09-fullpage.png">
+    </td>
+  </tr>
+  </table>
+  
   <div class="row">
   <div class="col">
   <img src="https://github.com/ron71/coz_infinityBehind-Blog-Site/blob/master/ScreenShots/Screen%20Shot%202018-10-17%20at%2007.38.33-fullpage.png">
