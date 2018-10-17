@@ -49,7 +49,6 @@
   #
   #
   SECRET_SECURITY=local_settings.SECRET
-  
   ```
  <p>The site is only functional when all the configrations as described above is set in the virtual environment.</p>
  
