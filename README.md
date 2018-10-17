@@ -39,17 +39,23 @@
   </li>
 </ul>
 <br>
-<p><b>Security key is kept hidden.</b> After cloning you must create your own <em>local_settings.py</em> file in project level folder and add:
-  <br>SECRET='....# your own securitykey....'<br>
-  After adding above file, in the <em>settings.py</em> file edit:<br>
+<p><b>Security key is kept hidden.</b> After cloning you must create your own <em>local_settings.py</em> file in project level folder and add:<p>
+  
+  ```python
+  SECRET='....# your own securitykey....'
+  ```
+  
+  <br>
+ <p> After adding above file, in the <em>settings.py</em> file edit:<br>
 </p>
-```
+
+
+```python
   from projectpackagename import local_settings.py
-  #
-  #
-  #
   SECRET_SECURITY=local_settings.SECRET
   ```
+  
+  
  <p>The site is only functional when all the configrations as described above is set in the virtual environment.</p>
  
  <h4>Here's Link to the site</h4><br>
